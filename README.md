@@ -125,11 +125,11 @@ cambiamos la etiqueta para subir docker tag juanmuruzabal/app:v1.2 juanmuruzabal
 
 donde lastest es la imagen de produccion (por el flujo de trabajo) y la ultima
 
-- pusheamos la imagen docker push juanmuruzabal/app:lastest 
+- pusheamos la imagen docker push juanmuruzabal/app:lastestv1.2 
 
 EL ENTORNO LASTEST REMPLAZA EL QA
 
 subimos tambien una version de produccion si se quiere
 
-juanmuruzabal/app:v1.2 juanmuruzabal/app:PROD
-docker push juanmuruzabal/app:PROD 
+juanmuruzabal/app:v1.2 juanmuruzabal/app:PRODv1.2
+docker push juanmuruzabal/app:PRODv1.2

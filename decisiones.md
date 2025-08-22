@@ -115,9 +115,9 @@ Dockerfile anterior:
 
     Mantengo un tag latest que apunta a la versión más reciente y estable:
 
-    - juanmuruzabal/app-go:latest → última versión estable.
+    - juanmuruzabal/app:latestv1.0 → última versión estable.
 
-    - juanmuruzabal/app:v1.0 → primera versión publicada.
+    - juanmuruzabal/app:PRODv1.0 → primera versión publicada.
 
     De esta forma otros usuarios pueden elegir:
 
