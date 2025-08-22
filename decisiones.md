@@ -49,7 +49,7 @@ COPY . .
 
 - Usé un multi-stage build:
   
-  La primera etapa (`golang:1.24-bookworm`) compila el código con las últimas actualizaciones de seguridad --> descargue la version
+  La primera etapa (`golang:1.24-alpine`) compila el código con las últimas actualizaciones de seguridad, version alpine ya que genera imagenes muy livianas --> descargue la version
   La segunda etapa (`gcr.io/distroless/base-debian12`) contiene únicamente el binario ya compilado, reduciendo la superficie de ataque y el tamaño de la imagen.
    --> "Distroless" no incluye shell, gestor de paquetes ni herramientas extra: solo lo mínimo para correr el binario → mucho más seguro y liviano. Ya que quitamos la posibilidad de ejecutar comandos de shell
 
