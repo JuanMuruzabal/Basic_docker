@@ -121,7 +121,7 @@ http://localhost:8082/ambiente
 
 - suponemos que la aplicacion (la imagen tomada en el docker compose) cumplio los estandares del entorno PROD
 
-cambiamos la etiqueta para subir docker tag juanmuruzabal/app:v1.2 juanmuruzabal/app:lastest
+cambiamos la etiqueta para subir docker tag juanmuruzabal/app:v1.2 juanmuruzabal/app:lastestv1.2
 
 donde lastest es la imagen de produccion (por el flujo de trabajo) y la ultima
 
