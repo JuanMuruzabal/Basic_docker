@@ -4,7 +4,7 @@
 
 - Para construir la imagen primero  descargamos la version 1.24  de go (la mas nueva, mas segura)
   
- docker pull golang:1.24-alpine 
+ docker pull golang:1.24-alpine
 
 - Buildeamos la imagen con: 
   
@@ -38,7 +38,7 @@
   con el nombre de dockerHUB para el desarrollo de la app el . significa que el docker busque en la carpeta actual para crearla imagen
 
 - Etiquetamos la imagen:
-  docker tag juanmuruzabal/app juanmuruzabal/app:v1.0 --> ultima etiqueta de desarrollo segun versiones
+  docker tag juanmuruzabal/app juanmuruzabal/app:v1.1 --> ultima etiqueta de desarrollo segun versiones
 
   y mantenemos la lastest para version estable de desarrollo
 
@@ -88,7 +88,7 @@ docker run -d --name app-qa --network app-net -p 8081:8080 ^
 -e DB_HOST=mysql ^
 -e DB_USER=appuser ^
 -e DB_PASSWORD=apppass ^
--e DB_NAME=appdb ^
+-e DB_NAME=appdb_qa ^
 juanmuruzabal/app:v1.1
 
 
@@ -99,7 +99,7 @@ docker run -d --name app-prod --network app-net -p 8082:8080 ^
 -e DB_HOST=mysql ^
 -e DB_USER=appuser ^
 -e DB_PASSWORD=apppass ^
--e DB_NAME=appdb ^
+-e DB_NAME=appdb_prod ^
 juanmuruzabal/app:v1.1
 
 
