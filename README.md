@@ -4,7 +4,7 @@
 
 - Para construir la imagen primero  descargamos la version 1.24  de go (la mas nueva, mas segura)
   
- docker pull golang:1.24-bookworm 
+ docker pull golang:1.24-alpine 
 
 - Buildeamos la imagen con: 
   
